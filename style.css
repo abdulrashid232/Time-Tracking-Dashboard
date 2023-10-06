@@ -25,6 +25,9 @@ body{
 }
 .main-container{
   display: flex;
+  position: relative;
+  top: 5rem;
+  left: 10rem;
 }
 .profile-section{
   /* margin: 5rem; */
@@ -57,9 +60,14 @@ body{
   height: 116px;
 }
 .name-tag p{
+  font-weight: 200;
+  color: var(--Pale-Blue);
   margin-bottom: 0px;
   padding: 0;
   line-height: 0;
+}
+.name-tag h1{
+  font-weight: 300;
 }
 .time-section{
   margin: 0rem 0 0 2rem;
@@ -72,6 +80,7 @@ body{
 }
 .time-section a:hover{
   color: white;
+  cursor: pointer;
 }
 .main-activities-grip{
   margin-left: 2rem;
@@ -123,6 +132,10 @@ body{
   background-color: var(--Dark-blue);
   border-radius: 10px;
 }
+.activity-content:hover{
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
 .title{
   display: flex;
   justify-content: space-between;
@@ -142,6 +155,9 @@ body{
   left: 2rem;
   /* margin-left: 7rem; */
   /* size:40px; */
+}
+.title img:hover{
+  cursor: pointer;
 }
 /* .exercise-svg{
   position: relative;
@@ -163,4 +179,104 @@ body{
 }
 .content p{
   color: var(--Pale-Blue);
+}
+
+/* Media queries for mobile min 320px & max 480 */
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+ 
+  .profile-section{
+    /* margin-top: 5rem; */
+    margin: 2rem 0 0.5rem 0;
+    width: 100%;
+    height: 203px;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    background-color: var(--Dark-blue);
+  }
+  .profile-main{
+    background-color: var(--Blue);
+    border-radius: 10px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-pic{
+    position: relative;
+    top: 0;
+    /* right: 2rem; */
+    margin: 0 0 0 0.8rem;
+    width: 78px;
+    height: 78px;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  .name-tag{
+    margin: 5rem 0 2rem 0.5rem;
+    width: 100%;
+    height: 116px;
+  }
+  .name-tag p{
+    margin-bottom: 0px;
+    padding: 0;
+    line-height: 0;
+  }
+  .time-section{
+    margin: 1rem 0 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* color: var(--Pale-Blue); */
+  }
+  .main-activities-grip{
+    margin-left: 0;
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* gap: 2rem; */
+  }
+  .main-activity{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+    /* top: -1.2rem; */
+    margin: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .activity-content{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 160px;
+    position: relative;
+    top: 10;
+    margin: 0;
+    top: 2rem;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+  }
+  .content{
+    margin: 1rem 0 0 0;
+    /* padding: 0 0 0 0; */
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 22px; */
+  }
 }
