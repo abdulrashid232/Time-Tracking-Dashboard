@@ -19,8 +19,11 @@ body{
   background-color: var(--Very-dark-blue);
   color:white ;
 }
+.main-container{
+  display: flex;
+}
 .profile-section{
-  margin: 5rem;
+  /* margin: 5rem; */
   width: 255px;
   height: 518px;
   border-radius: 10px;
@@ -34,7 +37,7 @@ body{
 .profile-pic{
   position: relative;
   top: 2rem;
-  margin: 5rem 0 5rem 2rem;
+  margin: 0rem 0 5rem 2rem;
   width: 78px;
   height: 78px;
   border: 5px solid white;
@@ -56,7 +59,7 @@ body{
 }
 .time-section{
   margin: 0rem 0 0 2rem;
-  color: var(--Pale-Blue);
+  /* color: var(--Pale-Blue); */
 }
 .time-section a{
   /* list-style: none; */
@@ -66,4 +69,62 @@ body{
 .time-section a:hover{
   color: white;
 }
-
+.main-activities-grip{
+  margin-left: 2rem;
+}
+.main-activity{
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 160px;
+  background-color: var(--Light-red-work);
+  border-radius: 10px;
+  position: relative;
+  /* top: -1.2rem; */
+}
+.main-activity img{
+  height: 45px;
+  position: relative;
+  margin-right: 0.8rem;
+  display: flex;
+  float: right;
+  
+}
+.activity-content{
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 180px;
+  position: relative;
+  margin: 0;
+  top: 2rem;
+  background-color: var(--Dark-blue);
+  border-radius: 10px;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 190px; */
+padding: 1rem 0 0 0;
+  margin: 0 0 0 1.8rem;
+  line-height: 0;
+}
+.title img{
+  width: 20px;
+  height: 10px; 
+  /* size:40px; */
+}
+.title h4{
+  font-size: 18px;
+}
+.content{
+  margin: 0 0 0 1.8rem;
+  /* padding: 0 0 0 0; */
+  line-height: 0;
+  height: 22px;
+}
+.content h3{
+  font-size: 40px;
+}
+.content p{
+  color: var(--Pale-Blue);
+}
