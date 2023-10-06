@@ -58,4 +58,12 @@ body{
   margin: 0rem 0 0 2rem;
   color: var(--Pale-Blue);
 }
+.time-section a{
+  /* list-style: none; */
+  text-decoration: none;
+  color: var(--Pale-Blue);
+}
+.time-section a:hover{
+  color: white;
+}
 
