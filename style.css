@@ -15,3 +15,47 @@
 --Desaturated-blue: hsl(235, 45%, 61%);
 --Pale-Blue: hsl(236, 100%, 87%);
 }
+body{
+  background-color: var(--Very-dark-blue);
+  color:white ;
+}
+.profile-section{
+  margin: 5rem;
+  width: 255px;
+  height: 518px;
+  border-radius: 10px;
+  background-color: var(--Dark-blue);
+}
+.profile-main{
+  background-color: var(--Blue);
+  border-radius: 10px;
+  height: 354px;
+}
+.profile-pic{
+  position: relative;
+  top: 2rem;
+  margin: 5rem 0 5rem 2rem;
+  width: 78px;
+  height: 78px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.profile-pic img{
+  width: 78px;
+  height: 78px;
+}
+.name-tag{
+  margin: 5rem 0 0 2rem;
+  width: 139px;
+  height: 116px;
+}
+.name-tag p{
+  margin-bottom: 0px;
+  padding: 0;
+  line-height: 0;
+}
+.time-section{
+  margin: 0rem 0 0 2rem;
+  color: var(--Pale-Blue);
+}
+
