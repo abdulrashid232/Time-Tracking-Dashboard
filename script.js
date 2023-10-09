@@ -1,118 +1,27 @@
-const jsonData =[
-  {
-    "title": "Work",
-    "timeframes": {
-      "daily": {
-        "current": 5,
-        "previous": 7
-      },
-      "weekly": {
-        "current": 32,
-        "previous": 36
-      },
-      "monthly": {
-        "current": 103,
-        "previous": 128
-      }
-    }
-  },
-  {
-    "title": "Play",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 2
-      },
-      "weekly": {
-        "current": 10,
-        "previous": 8
-      },
-      "monthly": {
-        "current": 23,
-        "previous": 29
-      }
-    }
-  },
-  {
-    "title": "Study",
-    "timeframes": {
-      "daily": {
-        "current": 0,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 4,
-        "previous": 7
-      },
-      "monthly": {
-        "current": 13,
-        "previous": 19
-      }
-    }
-  },
-  {
-    "title": "Exercise",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 4,
-        "previous": 5
-      },
-      "monthly": {
-        "current": 11,
-        "previous": 18
-      }
-    }
-  },
-  {
-    "title": "Social",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 3
-      },
-      "weekly": {
-        "current": 5,
-        "previous": 10
-      },
-      "monthly": {
-        "current": 21,
-        "previous": 23
-      }
-    }
-  },
-  {
-    "title": "Self Care",
-    "timeframes": {
-      "daily": {
-        "current": 0,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 2,
-        "previous": 2
-      },
-      "monthly": {
-        "current": 7,
-        "previous": 11
-      }
-    }
-  }
-]
-
-
 let content = document.querySelectorAll(".content");
 let daily = document.querySelector(".daily");
 let weekly = document.querySelector(".weekly");
 let monthly = document.querySelector(".monthly");
+let jsonData;
 
-window.onload = DailyFunction();
-daily.addEventListener('click', DailyFunction);
-weekly.addEventListener('click', WeeklyFunction);
-monthly.addEventListener('click', MonthlyFunction);
+fetch('data.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    jsonData = data;
+    daily.addEventListener('click', DailyFunction);
+    weekly.addEventListener('click', WeeklyFunction);
+    monthly.addEventListener('click', MonthlyFunction);
+    window.onload = DailyFunction();
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+
 
 function DailyFunction(){
   daily.classList.add('active');
