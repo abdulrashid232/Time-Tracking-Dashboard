@@ -156,20 +156,13 @@ body{
 }
 
 .title img{
-  width: 20px;
-  height: 10px; 
-  position: relative;
-  left: 2rem;
-  /* margin-left: 7rem; */
-  /* size:40px; */
+  width: 1rem;
+  align-self: right;
 }
 .title img:hover{
   cursor: pointer;
 }
-/* .exercise-svg{
-  position: relative;
-  left: -2rem;
-} */
+
 .title h4{
   font-weight: 300;
   font-size: 18px;
