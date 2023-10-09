@@ -96,7 +96,7 @@ body{
   width: 250px;
   height: 160px;
   border-radius: 10px;
-  padding-top: 0.2rem;
+  /* padding-top: 0.2rem; */
   position: relative;
 }
 .main-activity.work{
@@ -119,7 +119,7 @@ body{
 }
 .main-activity .img{
   position: relative;
-  top: -0.2rem;
+  /* top: -0.2rem; */
   /* margin-right: 0.8rem; */
   display: flex;
   float: right;
@@ -171,6 +171,7 @@ body{
   font-size: 40px;
 }
 .content p{
+  font-size: 16px;
   color: var(--Pale-Blue);
 }
 
@@ -258,10 +259,19 @@ body{
     border-radius: 10px;
   }
   .content{
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 1.8rem;
     line-height: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+  .content p{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 200rem;
+    margin: 0;
+    padding: 0;
   }
 }
