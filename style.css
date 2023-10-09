@@ -82,6 +82,9 @@ body{
   color: white;
   cursor: pointer;
 }
+.daily .active{
+  color:white;
+}
 .main-activities-grip{
   margin-left: 2rem;
   display: grid;
@@ -180,6 +183,7 @@ body{
 .content p{
   color: var(--Pale-Blue);
 }
+
 
 /* Media queries for mobile min 320px & max 480 */
 
