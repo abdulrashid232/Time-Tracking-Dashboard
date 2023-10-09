@@ -70,11 +70,15 @@ body{
   font-weight: 300;
 }
 .time-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0rem 0 0 2rem;
   /* color: var(--Pale-Blue); */
 }
 .time-section a{
   /* list-style: none; */
+  margin-top: 0.5rem;
   text-decoration: none;
   color: var(--Pale-Blue);
 }
@@ -82,8 +86,8 @@ body{
   color: white;
   cursor: pointer;
 }
-.daily .active{
-  color:white;
+.active{
+  color:white !important;
 }
 .main-activities-grip{
   margin-left: 2rem;
@@ -239,6 +243,7 @@ body{
   .time-section{
     margin: 1rem 0 0 0;
     width: 100%;
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-around;
