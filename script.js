@@ -114,6 +114,7 @@ daily.addEventListener('click', DailyFunction);
 weekly.addEventListener('click', WeeklyFunction);
 monthly.addEventListener('click', MonthlyFunction);
 window.onload = WeeklyFunction();
+
 function DailyFunction(){
   daily.classList.add('active');
   monthly.classList.remove('active');

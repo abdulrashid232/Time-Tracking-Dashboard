@@ -96,6 +96,7 @@ body{
   width: 250px;
   height: 160px;
   border-radius: 10px;
+  padding-top: 0.2rem;
   position: relative;
 }
 .main-activity.work{
@@ -117,9 +118,9 @@ body{
   background-color: var(--Soft-orange-self-care)
 }
 .main-activity .img{
-  height: 45px;
   position: relative;
-  margin-right: 0.8rem;
+  top: -0.2rem;
+  /* margin-right: 0.8rem; */
   display: flex;
   float: right;
   
@@ -146,7 +147,9 @@ body{
   line-height: 0;
 }
 
-.title img{
+.title>img{
+  position: relative;
+  left: 3rem;
   width: 1rem;
   align-self: right;
 }
