@@ -1,19 +1,3 @@
-// let jsonjsonData;
-
-// fetch('jsonData.json')
-//   .then(response => {
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok');
-//     }
-//     return response.json();
-//   })
-//   .then(jsonData => {
-//     jsonjsonData = jsonData;
-//     updateHTML();
-//   })
-//   .catch(error => {
-//     console.error('There was a problem with the fetch operation:', error);
-//   });
 const jsonData =[
   {
     "title": "Work",
@@ -120,27 +104,6 @@ const jsonData =[
 ]
 
 
-// function updateHTML() {
-//   const mainActivities = document.querySelectorAll('.main-activity');
-
-//   mainActivities.forEach(activity => {
-//     const title = activity.querySelector('h4');
-//     const currentHours = activity.querySelector('h3');
-//     const previousHours = activity.querySelector('p');
-
-//     const activityjsonData = jsonjsonData.find(item => item.title.toLowerCase() === title.textContent.toLowerCase());
-
-//     if (activityjsonData) {
-//       currentHours.textContent = activityjsonData.timeframes.daily
-//     .current + 'hrs';
-//       previousHours.textContent = `Yesterday-${activityjsonData.timeframes.daily.previous}hrs`;
-//     }
-//   });
-// }
-
-
-// updateHTML();
-
 let content = document.querySelectorAll(".content");
 let daily = document.querySelector(".daily");
 let weekly = document.querySelector(".weekly");
@@ -149,8 +112,8 @@ let monthly = document.querySelector(".monthly");
 
 daily.addEventListener('click', DailyFunction);
 weekly.addEventListener('click', WeeklyFunction);
-// monthly.addEventListener('click', MonthlyFunction);
-// window.onload = WeeklyFunction();
+monthly.addEventListener('click', MonthlyFunction);
+window.onload = WeeklyFunction();
 function DailyFunction(){
   daily.classList.add('active');
   monthly.classList.remove('active');
@@ -185,5 +148,23 @@ function WeeklyFunction(){
   <p>${'Last Week - '+ jsonData[4].timeframes.weekly.previous + 'hrs'} </p> `
   content[5].innerHTML=` <h3>${jsonData[5].timeframes.weekly.current + 'hr'} </h3> 
   <p>${'Last Week - '+ jsonData[5].timeframes.weekly.previous + 'hr'} </p> `
+}
+
+function MonthlyFunction(){
+  daily.classList.remove('active');
+  monthly.classList.add('active');
+  weekly.classList.remove('active');
+  content[0].innerHTML=` <h3>${jsonData[0].timeframes.monthly.current + 'hrs'} </h3> 
+  <p>${'Last Month - '+ jsonData[0].timeframes.monthly.previous + 'hrs'} </p> `
+  content[1].innerHTML=` <h3>${jsonData[1].timeframes.monthly.current + 'hr'} </h3> 
+  <p>${'Last Month - '+ jsonData[1].timeframes.monthly.previous + 'hrs'} </p> `
+  content[2].innerHTML=` <h3>${jsonData[2].timeframes.monthly.current + 'hr'} </h3> 
+  <p>${'Last Month - '+ jsonData[2].timeframes.monthly.previous + 'hr'} </p> `
+  content[3].innerHTML=` <h3>${jsonData[3].timeframes.monthly.current + 'hr'} </h3> 
+  <p>${'Last Month - '+ jsonData[3].timeframes.monthly.previous + 'hr'} </p> `
+  content[4].innerHTML=` <h3>${jsonData[4].timeframes.monthly.current + 'hr'} </h3> 
+  <p>${'Last Month - '+ jsonData[4].timeframes.monthly.previous + 'hrs'} </p> `
+  content[5].innerHTML=` <h3>${jsonData[5].timeframes.monthly.current + 'hr'} </h3> 
+  <p>${'Last Month - '+ jsonData[5].timeframes.monthly.previous + 'hr'} </p> `
 }
 
