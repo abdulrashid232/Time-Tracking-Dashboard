@@ -2,6 +2,7 @@ let content = document.querySelectorAll(".content");
 let daily = document.querySelector(".daily");
 let weekly = document.querySelector(".weekly");
 let monthly = document.querySelector(".monthly");
+
 let jsonData;
 
 fetch('data.json')
