@@ -48,16 +48,16 @@ function WeeklyFunction(){
   weekly.classList.add('active');
   content[0].innerHTML=` <h3>${jsonData[0].timeframes.weekly.current + 'hrs'} </h3> 
   <p>${'Last Week - '+ jsonData[0].timeframes.weekly.previous + 'hrs'} </p> `
-  content[1].innerHTML=` <h3>${jsonData[1].timeframes.weekly.current + 'hr'} </h3> 
+  content[1].innerHTML=` <h3>${jsonData[1].timeframes.weekly.current + 'hrs'} </h3> 
   <p>${'Last Week - '+ jsonData[1].timeframes.weekly.previous + 'hrs'} </p> `
-  content[2].innerHTML=` <h3>${jsonData[2].timeframes.weekly.current + 'hr'} </h3> 
-  <p>${'Last Week - '+ jsonData[2].timeframes.weekly.previous + 'hr'} </p> `
-  content[3].innerHTML=` <h3>${jsonData[3].timeframes.weekly.current + 'hr'} </h3> 
-  <p>${'Last Week - '+ jsonData[3].timeframes.weekly.previous + 'hr'} </p> `
-  content[4].innerHTML=` <h3>${jsonData[4].timeframes.weekly.current + 'hr'} </h3> 
+  content[2].innerHTML=` <h3>${jsonData[2].timeframes.weekly.current + 'hrs'} </h3> 
+  <p>${'Last Week - '+ jsonData[2].timeframes.weekly.previous + 'hrs'} </p> `
+  content[3].innerHTML=` <h3>${jsonData[3].timeframes.weekly.current + 'hrs'} </h3> 
+  <p>${'Last Week - '+ jsonData[3].timeframes.weekly.previous + 'hrs'} </p> `
+  content[4].innerHTML=` <h3>${jsonData[4].timeframes.weekly.current + 'hrs'} </h3> 
   <p>${'Last Week - '+ jsonData[4].timeframes.weekly.previous + 'hrs'} </p> `
-  content[5].innerHTML=` <h3>${jsonData[5].timeframes.weekly.current + 'hr'} </h3> 
-  <p>${'Last Week - '+ jsonData[5].timeframes.weekly.previous + 'hr'} </p> `
+  content[5].innerHTML=` <h3>${jsonData[5].timeframes.weekly.current + 'hrs'} </h3> 
+  <p>${'Last Week - '+ jsonData[5].timeframes.weekly.previous + 'hrs'} </p> `
 }
 
 function MonthlyFunction(){
@@ -66,15 +66,15 @@ function MonthlyFunction(){
   weekly.classList.remove('active');
   content[0].innerHTML=` <h3>${jsonData[0].timeframes.monthly.current + 'hrs'} </h3> 
   <p>${'Last Month - '+ jsonData[0].timeframes.monthly.previous + 'hrs'} </p> `
-  content[1].innerHTML=` <h3>${jsonData[1].timeframes.monthly.current + 'hr'} </h3> 
+  content[1].innerHTML=` <h3>${jsonData[1].timeframes.monthly.current + 'hrs'} </h3> 
   <p>${'Last Month - '+ jsonData[1].timeframes.monthly.previous + 'hrs'} </p> `
-  content[2].innerHTML=` <h3>${jsonData[2].timeframes.monthly.current + 'hr'} </h3> 
-  <p>${'Last Month - '+ jsonData[2].timeframes.monthly.previous + 'hr'} </p> `
-  content[3].innerHTML=` <h3>${jsonData[3].timeframes.monthly.current + 'hr'} </h3> 
-  <p>${'Last Month - '+ jsonData[3].timeframes.monthly.previous + 'hr'} </p> `
-  content[4].innerHTML=` <h3>${jsonData[4].timeframes.monthly.current + 'hr'} </h3> 
+  content[2].innerHTML=` <h3>${jsonData[2].timeframes.monthly.current + 'hrs'} </h3> 
+  <p>${'Last Month - '+ jsonData[2].timeframes.monthly.previous + 'hrs'} </p> `
+  content[3].innerHTML=` <h3>${jsonData[3].timeframes.monthly.current + 'hrs'} </h3> 
+  <p>${'Last Month - '+ jsonData[3].timeframes.monthly.previous + 'hrs'} </p> `
+  content[4].innerHTML=` <h3>${jsonData[4].timeframes.monthly.current + 'hrs'} </h3> 
   <p>${'Last Month - '+ jsonData[4].timeframes.monthly.previous + 'hrs'} </p> `
-  content[5].innerHTML=` <h3>${jsonData[5].timeframes.monthly.current + 'hr'} </h3> 
-  <p>${'Last Month - '+ jsonData[5].timeframes.monthly.previous + 'hr'} </p> `
+  content[5].innerHTML=` <h3>${jsonData[5].timeframes.monthly.current + 'hrs'} </h3> 
+  <p>${'Last Month - '+ jsonData[5].timeframes.monthly.previous + 'hrs'} </p> `
 }
 
