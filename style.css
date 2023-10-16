@@ -28,7 +28,7 @@ body{
   position: relative;
   width:fit-content;
   margin: auto;
-  top: 5rem;
+  /* top: ; */
   /* left: 10rem; */
 }
 .profile-section{
@@ -74,10 +74,10 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0rem 0 0 2rem;
+  margin: 1rem 0 0 2rem;
 }
 .time-section a{
-  margin-top: 0.5rem;
+  padding:0.6rem 0;
   text-decoration: none;
   color: var(--Pale-Blue);
 }
@@ -129,7 +129,7 @@ body{
 }
 .activity-content{
   width: 252px;
-  height: 195px;
+  height: 203px;
   position: relative;
   margin: 0;
   top: 2rem;
